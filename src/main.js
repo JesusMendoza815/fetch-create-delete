@@ -72,3 +72,10 @@ const renderList = async () => {
   })
 }
 renderList();
+
+const get = async () => {
+  const response = await fetch(`${URL_DATA}/.json`);
+  const data = await response.json();
+  console.log(data);
+}
+get();
